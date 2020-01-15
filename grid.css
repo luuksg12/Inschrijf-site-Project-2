@@ -1,0 +1,52 @@
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    /**/
+    grid-template-rows: 150px auto 100px;
+    /* fr is een grid specifieke waarde. Het staat voor Fraction Unit. met minmax geef ik de minimale waarde en
+     maximaale waarde van een kolom mee. 9fr is het overige deel*/
+    grid-template-columns: minmax(200px, 3fr) 9fr;
+}
+/*Nu moet ik natuurlijk de kolommen vullen. Dit doe ik door middel van grid-column. Ik geef aan dat de header een
+van de 3 kolommen moet gebruiken. Bij nav gebruik ik span 2. span 2 betekend dat het 2 rijen in beslag neemt.*/
+header{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    background: lightgoldenrodyellow;
+}
+footer{
+    grid-column: 1 / 3;
+    grid-row: auto;
+    background: #8effc7
+}
+nav {
+    grid-column: 2 / 3;
+    background: green;
+    grid-row: 2 / span 2;
+    border: 1px black;
+}
+main {
+    grid-column: 2 / 3;
+    background: #0000bf;
+    grid-row: 2 / span 2;
+}
+#title {
+    text-align: center;
+    color: #FF4959;
+    font-size: 25px !important;
+    font-family: 'Oxygen', sans-serif;
+    max-height: 100px;
+    padding-bottom: 10px;
+    margin-top: 85px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+}
+#tableR{
+    margin-left: auto;
+    margin-right: auto;;
+}
