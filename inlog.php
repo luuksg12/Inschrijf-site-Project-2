@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!--include het javascript vanuit de functions.js -->
+    <script src = "functions.js"></script>
+
 </head>
 <body>
 <div id = "title">
@@ -27,15 +30,15 @@
     <h1>Login</h1>
     <form action="authenticate.php" method="post">
         <label for="username">
-            <i class="fas fa-user"></i>
         </label>
         <input type="text" name="username" placeholder="Username" id="username" required>
         <label for="password">
-            <i class="fas fa-lock"></i>
         </label>
         <input type="password" name="password" placeholder="Password" id="password" required>
-        <input type="submit" value="Login">
+        <!--call de functies op een hover en geef het element waar je op staat mee.-->
+        <input type="submit" onmouseover="hover(this)" onmouseout="dehover(this)" value="Login" id = "knopje">
     </form>
+    <p id = "error"></p>
     <a href = "./index.php"><p align = "center">annuleren</p></a>
 </div>
 </body>

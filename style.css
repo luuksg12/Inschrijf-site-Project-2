@@ -120,5 +120,9 @@ button.knoppen{
 	left: 10%;
 	position: absolute;
 }
+#knopje{
+	transition: 1s;
+}
+
 
 

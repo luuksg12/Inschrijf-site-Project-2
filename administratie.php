@@ -11,6 +11,16 @@ if (!isset($_SESSION['loggedin'])) {
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="beheer.css">
+    <script>
+        function verwijderd() {
+            window.alert("Datum verwijderd");
+
+        }
+        function toegevoegd() {
+            window.alert("Datum toegevoegd")
+
+        }
+    </script>
 </head>
 <body>
 <div class="login">
@@ -20,7 +30,7 @@ if (!isset($_SESSION['loggedin'])) {
     <form action="DataAanpassen.php" method="post">
         <input type = "date" name = 'datum1'>
         <br>
-        <input type = "submit" name = "submit" value="Datum toevoegen">
+        <input type = "submit" onclick = "toegevoegd()" name = "submit" value="Datum toevoegen">
     </form>
     <h3>Data in lijst</h3>
     <form action="DataVerwijderen.php" method="post">
@@ -35,7 +45,7 @@ if (!isset($_SESSION['loggedin'])) {
             ?>
         </select>
         <br>
-        <input type = "submit" name = "submit" value="Datum verwijderen">
+        <input type = "submit" onclick = "verwijderd()" name = "submit" value="Datum verwijderen">
     </form>
     <br>
 </div>
