@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
     </style>
 <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>Wortelkracht - inschrijven</title>
-</head>
-<body>
-<div id = "title">
-	<h1>W o r t e l K r a c h t</h1>
-</div>
 
-    <div id = "menu">
+<header id = "title">
+	<h1 >W o r t e l K r a c h t</h1>
+</header>
+
+<nav id = "menu">
     <table id = "tableR">
         <tr>
             <td class = "td"><a class = "knop1" href="https://www.studiohertz.nl/"><p>HOME</p></a></td>
@@ -24,7 +22,17 @@
             <td class = "td"><a class = "knop1" href="http://localhost/inschrijven/"><p>INSCHRIJVEN</p></a></td>
         </tr>
     </table>
-    </div>
+            <div id = secondairy>
+            <a class = "knop2" href="https://www.studiohertz.nl/"><p>HOME</p></a>
+            <a class = "knop2" href="https://www.studiohertz.nl/gallery"><p>KLANKTHERAPIE</p>
+            <a class = "knop2" href="https://www.studiohertz.nl/about"><p>OVER MIJ</p>
+            <a class = "knop2" href="https://www.studiohertz.nl/agenda"><p>AGENDA</p>
+            <a class = "knop2" href="https://www.studiohertz.nl/contact"><p>OVER MIJ</p></a>
+            <a class = "knop2" href="http://localhost/inschrijven/"><p>INSCHRIJVEN</p></a>
+            </div>
+</nav>
+
+<body>
 
     <div id = "mainpage">
         <table class = "Colpadding" id = "tableHolder">
@@ -58,13 +66,13 @@
                         </div>
                     </td></tr>
 
-                <tr><td>   <input class = "info" type = "text" name = 'voornaam'></td></tr>
+                <tr><td>   <input class = "info" type = "text" name = 'voornaam' required maxlength = "40"></td></tr>
                 <tr><td><label class = "label">Achternaam:</label></td></tr>
-                <tr><td>   <input class = "info" type = "text" name = 'achternaam'></td></tr>
+                <tr><td>   <input class = "info" type = "text" name = 'achternaam' required maxlength = "40"></td></tr>
                 <tr><td><label class = "label">Adres:</label></td></tr>
-                <tr><td>   <input class = "info" type = "text" name = 'adres'></td></tr>
+                <tr><td>   <input class = "info" type = "text" name = 'adres' required maxlength = "40"></td></tr>
                 <tr><td><label class = "label">Woonplaats:</label></td></tr>
-                <tr><td>   <input class = "info" type = "text" name = 'woonplaats'></td>
+                <tr><td>   <input class = "info" type = "text" name = 'woonplaats' required maxlength = "40"></td>
                     <td rowspan="7">
 
                         <div class = "infobox" id = "box-3">
@@ -72,30 +80,32 @@
                             <input type = "checkbox" required>
                             <br>
                             <input id = "submit" type = "submit" name = "submit" value = "Inschrijven">
+
                         </div>
 
 
                     </td>
                 </tr>
                 <tr><td><label class = "label">Telefoonnummer:</label></td></tr>
-                <tr><td>   <input class = "info" type = "text" name = 'telefoonnummer'></td></tr>
+                <tr><td>   <input class = "info" type = "text" name = 'telefoonnummer' required maxlength = "20"></td></tr>
                 <tr><td><label class = "label">E-mailadres:</label></td></tr>
-                <tr><td>  <input class = "info" type = "text" name = 'email'></td></tr>
+                <tr><td>  <input class = "info" type = "text" name = 'email' required maxlength = "40"></td></tr>
                 <tr><td><label class = "label">Bericht:</label></td></tr>
-                <tr><td>   <textarea class = "info" id = "bericht" name = 'bericht' type = "text" placeholder="Eventuele opmerkingen..."></textarea></td></tr>
+                <tr><td>   <textarea class = "info" id = "bericht" name = 'bericht' maxlength = "125" type = "text" placeholder="Eventuele opmerkingen..."></textarea></td></tr>
 
 
 
         </table>
-    </div>
+        <p id ="testid"></p>
+        </div>
+        </form>
+
 <div>
+    <a href = "./plaatsen.php"><p align = "center">plaatsen</p></a>
     <a href = "./algemenevoorwaarden.php"><p align = "center">algemene voorwaarden</p></a>
     <a href = "./inlog.php"><p align = "center">administatie</p></a>
 </div>
-</form>
-<div id = "footer">
-	<h1>Footer placeholder</h1>
-</div>
-<img id= "layout" src="images/layout2.png">
 </body>
+
+<script src="functions.js"></script>
 </html>

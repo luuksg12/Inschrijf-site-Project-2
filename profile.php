@@ -16,17 +16,13 @@ $stmt->close();
 ?>
 <!DOCTYPE html>
 <html>
-<head>
     <meta charset="utf-8">
     <title>Profiel-administratie</title>
     <link rel="stylesheet" type="text/css" href="beheer.css">
-</head>
+<header>
+    <h1>account beheer</h1>
+</header>
 <body class="loggedin">
-<nav class="navtop">
-    <div>
-        <h1>account beheer</h1>
-    </div>
-</nav>
 <div class="content">
     <h2>Profile Page</h2>
     <div>

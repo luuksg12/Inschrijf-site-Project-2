@@ -34,6 +34,9 @@ button.knoppen{
 	font-weight: 400;
 
 }
+.knop2{
+	display: none;
+}
 .td{
 	padding-right: 50px;
 }
@@ -58,6 +61,8 @@ button.knoppen{
 	background-image: url("images/Inschrijf.jpeg"); background-repeat: no-repeat; width: 100%; height: 100%; background-size: cover;
 	border: #000000 5px solid;
 	width: auto;
+	padding-right: 15px;
+	padding-top: 15px;
 	padding-bottom: 15px;
 }
 .Colpadding{
@@ -105,7 +110,6 @@ button.knoppen{
 	resize: vertical;
 	max-height: 160px;
 	text-align: left;
-	text-align: start;
 }
 #mainpage{
 	position: relative;
@@ -113,16 +117,172 @@ button.knoppen{
 	margin-left: auto;
 	margin-top: 20px;}
 #submit{
-	margin-left: 206px;
+	margin-top: 120px;
+	width: 300px;
+	height: 50px;
 }
 #layout{
-	width:80%;
-	left: 10%;
-	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 800px;
+	height: 450px;
 }
 #knopje{
 	transition: 1s;
 }
+.login{
+	display: block;
+	text-align: center;
+}
+@media only screen and (max-width: 830px) and (min-width: 470px) {
 
+	#title {
+		text-align: center;
+		color: #FF4959;
+		font-size: 10px !important;
+		font-family: 'Oxygen', sans-serif;
+		max-height: 30px;
+		padding-bottom: 10px;
+		margin-top: 30px;
+		-webkit-font-smoothing: antialiased;
+		font-weight: bold;
+	}
+	input.info{
+		width: 90px;
+	}
+	#bericht{
+		width: 90px;
+	}
+	#tableHolder{
+		width: 200px;
+		float: top;
+		background-image: url("images/Inschrijf.jpeg"); background-repeat: no-repeat; height: 100%; background-size: cover;
+		border: #000000 5px solid;
+		padding-right: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#box-2{
+		width: 100%;
+	}
+	.infobox#box-3{
+		background-color: rgba(255,255,255,0.7);
+		height: 100%;
+
+	}
+	.Colpadding{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.Colpadding td{
+		width: 50%;
+	}
+	.knop1 {
+		font-size: 10px;
+		margin-right: 10px;
+	}
+	.td{
+		padding-right: 20px;
+	}
+	.infobox{
+		border: 1px #000000 solid;
+		color : #4f4f4f;
+		font-size: 17px;
+		font-family: Source Sans Pro;
+
+	}
+	.infobox#box-2{
+		background-color: #fff;
+		background-color: rgba(255,255,255,0.7);
+		height: 100%;
+	}
+	.infobox#box-3{
+		margin-left: 0px;
+		background-color: #fff;
+		background-color: rgba(255,255,255,0.7);
+		height: 100%;
+
+	}
+	#submit{
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 470px){
+	#title {
+		text-align: center;
+		color: #FF4959;
+		font-size: 10px !important;
+		font-family: 'Oxygen', sans-serif;
+		max-height: 30px;
+		padding-bottom: 10px;
+		margin-top: 30px;
+		-webkit-font-smoothing: antialiased;
+		font-weight: bold;
+	}
+	input.info{
+		width: 90px;
+	}
+	#bericht{
+		width: 90px;
+	}
+	#tableHolder{
+		width: 200px;
+		float: top;
+		background-image: url("images/Inschrijf.jpeg"); background-repeat: no-repeat; height: 100%; background-size: cover;
+		border: #000000 5px solid;
+		padding-right: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#box-2{
+		width: 100%;
+	}
+	.infobox#box-3{
+		background-color: rgba(255,255,255,0.7);
+		height: 100%;
+
+	}
+	.Colpadding{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.Colpadding td{
+		width: 50%;
+	}
+	.knop1 {
+		font-size: 10px;
+		margin-right: 10px;
+	}
+	.td{
+		padding-right: 20px;
+	}
+	.infobox{
+		border: 1px #000000 solid;
+		color : #4f4f4f;
+		font-size: 17px;
+		font-family: Source Sans Pro;
+
+	}
+	.infobox#box-2{
+		background-color: #fff;
+		background-color: rgba(255,255,255,0.7);
+		height: 100%;
+	}
+	.infobox#box-3{
+		margin-left: 0px;
+		background-color: #fff;
+		background-color: rgba(255,255,255,0.7);
+		height: 100%;
+
+	}
+	#submit{
+		width:180px;
+	}
+}
 
 

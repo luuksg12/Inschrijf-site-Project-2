@@ -1,8 +1,3 @@
-function hover(x) {
-        x.style.transform = "scale(1.5)";
+document.getElementById("testid").addEventListener("click", function inschrijf(){
+    window.alert("Dankuwel voor uw inschrijving")});
 
-    }
-function dehover(x) {
-        x.style.transform = "scale(1)";
-
-    }

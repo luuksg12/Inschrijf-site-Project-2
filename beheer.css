@@ -8,3 +8,30 @@ table{
     text-align: center;
     border: #000000 1px solid;
 }
+#inschrijvingen_table{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1000px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 200px;
+}
+tr{
+}
+td{
+    width: 50%;
+    border-right: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+}
+.table_row_inschrijf{
+    background: #bfc3c9;
+    max-width: 1000px;
+}
+.table_data_inschrijf{
+    background: #d9dde3;
+    min-width: 1000px;
+    max-width: 1000px;
+}
+#header{
+    text-align: center;
+}
